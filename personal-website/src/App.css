@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+/* navbar css */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
