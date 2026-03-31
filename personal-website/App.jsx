@@ -1,14 +1,15 @@
 //important imports
-import { useState } from "react";
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./src/components/Layout";
+import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error404 from "./Error404";
-import "./App.css";
+import "./src/App.css";
 
 // come back for export default app
-export default function App() {
+function App() {
   return (
     <Routes>
       <Route element={<Layout />} />
@@ -21,3 +22,5 @@ export default function App() {
     </Routes>
   );
 }
+
+export default App;
