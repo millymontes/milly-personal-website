@@ -1,7 +1,9 @@
-export default function Contact() {
+function Contact() {
   return (
-    <section>
+    <section id="contact" style={{ height: "100vh" }}>
       <h1>Contact Me</h1>
     </section>
   );
 }
+
+export default Contact;

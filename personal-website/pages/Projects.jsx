@@ -1,7 +1,8 @@
-export default function Projects() {
+function Projects() {
   return (
-    <section>
+    <section id="projects" style={{ height: "100vh" }}>
       <h1>Projects</h1>
     </section>
   );
 }
+export default Projects;

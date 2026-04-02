@@ -1,7 +1,8 @@
-export default function Home() {
+function Home() {
   return (
-    <section>
+    <section id="home" style={{ height: "100vh" }}>
       <h1>Milly Montes</h1>
     </section>
   );
 }
+export default Home;
