@@ -1,29 +1,24 @@
 // import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../App.css";
 
-// export default function NavBar() {
-//   return (
-//     <header>
-//       <nav>
-//         <div className="navigation">
-//           <NavLink to="/home">Home</NavLink>
-//           {/* add a lil something that is a logo that goes to home page */}
-//           <NavLink to="/aboutme">About Me</NavLink>
-//           <NavLink to="/projects">Projects</NavLink>
-//           <NavLink to="/contact">Contact Me</NavLink>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// }
-
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#aboutme">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav className="navbar">
+      <button onClick={toggleMenu}>☰</button>
+      {isOpen && (
+        <div>
+          <a href="#home">Home</a>
+          <a href="#aboutme">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      )}
     </nav>
   );
 }

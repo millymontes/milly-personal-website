@@ -46,9 +46,15 @@ html {
 }
 
 /* navbar css */
-.navigation {
+/* .navigation {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
+} */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
   margin-bottom: 2rem;
 }
