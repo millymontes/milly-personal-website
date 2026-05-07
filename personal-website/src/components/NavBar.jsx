@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "../App.css";
 
+//toggle bar
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +13,7 @@ function NavBar() {
     <nav className="navbar">
       <button onClick={toggleMenu}>☰</button>
       {isOpen && (
-        <div>
+        <div className="navigation">
           <a href="#home">Home</a>
           <a href="#aboutme">About Me</a>
           <a href="#projects">Projects</a>
