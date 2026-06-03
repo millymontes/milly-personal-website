@@ -1,14 +1,27 @@
+/* checklist
+- [] add css to make it look cuter
+- [] add project descriptions and links to github repos
+- [] add images to projects + fix the cards
+- [] add contact info + make it look cuter
+- [] play around with background colors and fonts
+- [] make the dropdown cuter
+- [] fix the big gap on ALL pages
+*/
+
 /* all pages css  */
 #root {
   text-align: center;
-  background-color: #87ae73;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #87ae73;
 }
 
 /* NAVIGATION BAR CSS */
+
+/* make dropdown cuter */
+
 .navbar {
   display: flex;
   justify-content: right;
@@ -23,10 +36,9 @@ html {
   gap: 1rem;
   margin-bottom: 2rem;
   background-color: #ede0d4;
-
   padding: 1rem;
   border-radius: 8px;
-  color: inherit;
+  text-decoration: none;
 }
 /* navbar button */
 button {
@@ -45,6 +57,8 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* fix the big gap on ALL pages*/
 
 /* home */
 #home {
@@ -66,4 +80,56 @@ button:focus-visible {
   font-size: 5.5em;
   font-weight: 400;
   font-style: normal;
+}
+
+/* about me */
+#aboutme {
+  background-color: #dcc7b1;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* projects */
+#projects {
+  background-color: #cac0b1;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#project-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.project-list1 {
+  /* replace background-color with image background of Blueberry game */
+  background-color: #8a3fcd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-list2 {
+  background-color: #cbc9cd;
+}
+
+.project-list3 {
+  background-color: #cbc9cd;
+}
+
+/* contact */
+#contact {
+  background-color: #b3e3b5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
